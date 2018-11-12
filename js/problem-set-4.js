@@ -4,7 +4,8 @@
 
 function hello() {
 
-  // WRITE YOUR EXERCISE 1 CODE HERE
+  var p = document.getElementById ("hello");
+  p.innerHTML = "Hello, Ap Computer Science Principles!";
 
   ////////////////// DO NOT MODIFY
   check("hello"); // DO NOT MODIFY
@@ -21,7 +22,10 @@ function helloAgain() {
   let name; // DO NOT MODIFY      the value that the user enters
   //////////// DO NOT MODIFY      in response to your prompt.
 
-  // WRITE YOUR EXERCISE 2 CODE HERE
+  var person = prompt("Please enter your name");
+    if(person != null) {
+      alert("Hello, " + person + "!");
+    }
 
   ///////////////////////////// DO NOT MODIFY
   check("helloAgain", name); // DO NOT MODIFY
@@ -41,7 +45,7 @@ function celsius() {
   // The above code generates a random number between -100 and 1000
   // (inclusive), and rounds this value to 2 decimal places.
 
-  // WRITE YOUR EXERCISE 3 CODE HERE
+  var fahr = ((Math.cels() * 1.8) + 32).toFixed(2);
 
   ////////////////////////// DO NOT MODIFY
   check("celsius", cels); // DO NOT MODIFY
@@ -61,7 +65,7 @@ function fahrenheit() {
   // The above code generates a random number between -100 and 1000
   // (inclusive), and rounds this value to 2 decimal places.
 
-  // WRITE YOUR EXERCISE 4 CODE HERE
+var cels = ((Math.fahr() - 32) * 1.8).toFixed(2);
 
   ///////////////////////////// DO NOT MODIFY
   check("fahrenheit", fahr); // DO NOT MODIFY
