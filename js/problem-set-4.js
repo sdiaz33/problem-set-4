@@ -4,8 +4,8 @@
 
 function hello() {
 
-  var p = document.getElementById ("hello");
-  p.innerHTML = "Hello, Ap Computer Science Principles!";
+  var p = document.getElementById ("output1");
+  p.innerHTML = "Hello, AP Computer Science Principles!";
 
   ////////////////// DO NOT MODIFY
   check("hello"); // DO NOT MODIFY
@@ -22,7 +22,7 @@ function helloAgain() {
   let name; // DO NOT MODIFY      the value that the user enters
   //////////// DO NOT MODIFY      in response to your prompt.
 
-  var person = prompt("Please enter your name");
+  let person = prompt("Please enter your name");
     if(person != null) {
       alert("Hello, " + person + "!");
     }
@@ -45,7 +45,7 @@ function celsius() {
   // The above code generates a random number between -100 and 1000
   // (inclusive), and rounds this value to 2 decimal places.
 
-  var fahr = ((Math.cels() * 1.8) + 32).toFixed(2);
+  let fahr = ((Math.cels() * 1.8) + 32).toFixed(2);
 
   ////////////////////////// DO NOT MODIFY
   check("celsius", cels); // DO NOT MODIFY
@@ -65,7 +65,7 @@ function fahrenheit() {
   // The above code generates a random number between -100 and 1000
   // (inclusive), and rounds this value to 2 decimal places.
 
-var cels = ((Math.fahr() - 32) * 1.8).toFixed(2);
+  let cels = ((Math.fahr() - 32) * 1.8).toFixed(2);
 
   ///////////////////////////// DO NOT MODIFY
   check("fahrenheit", fahr); // DO NOT MODIFY
@@ -84,6 +84,10 @@ function inches() {
 
   // You are free to modify the value of inches, which you'll likely
   // need to do. Please do not modify the value of input.
+
+  let miles = ((Math.input() / 63360)Math.floor);
+  let yards = ((Math.input() / 36)Math.floor);
+  let feet = ((Math.input() / 12)Math.floor);
 
   ////////////////////// DO NOT MODIFY
   let inches = input; // DO NOT MODIFY
