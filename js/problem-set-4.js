@@ -22,9 +22,8 @@ function helloAgain() {
   let name; // DO NOT MODIFY      the value that the user enters
   //////////// DO NOT MODIFY      in response to your prompt.
 
-  let person = prompt("Please enter your name");
-    if(person != null) {
-      alert("Hello, " + person + "!");
+  name = prompt("Please enter your name");
+    document.getElementById("output2").innerHTML = ("Hello, " + name + "!");
     }
 
   ///////////////////////////// DO NOT MODIFY
@@ -45,7 +44,8 @@ function celsius() {
   // The above code generates a random number between -100 and 1000
   // (inclusive), and rounds this value to 2 decimal places.
 
-  let fahr = ((Math.cels() * 1.8) + 32).toFixed(2);
+  let fahr = ((cels * 1.8) + 32).toFixed(2);
+  document.getElementById("output3").innerHTML = (cels + " degrees Celsius equals " + fahr + "degrees Fahrenheit.");
 
   ////////////////////////// DO NOT MODIFY
   check("celsius", cels); // DO NOT MODIFY
