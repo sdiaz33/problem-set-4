@@ -66,6 +66,7 @@ function fahrenheit() {
   // (inclusive), and rounds this value to 2 decimal places.
 
   let cels = ((Math.fahr() - 32) * 1.8).toFixed(2);
+  document.getElementById("output4").innerHTML = (fahr + " degrees Fahrenheit equals " + cels + "degrees Celsius.");
 
   ///////////////////////////// DO NOT MODIFY
   check("fahrenheit", fahr); // DO NOT MODIFY
@@ -85,9 +86,11 @@ function inches() {
   // You are free to modify the value of inches, which you'll likely
   // need to do. Please do not modify the value of input.
 
-  let miles = ((Math.input() / 63360)Math.floor);
-  let yards = ((Math.input() / 36)Math.floor);
-  let feet = ((Math.input() / 12)Math.floor);
+  let miles = Math.floor(inches/63360);
+  let yards = Math.floor((inches - (miles * 63360))/36);
+  let feet = Math.floor((inches - (miles * 63360) - (yards * 36)/12);
+  let inchCount = inches - (miles * 63360) - (yards * 36) - (feet * 12);
+  document.getElementById("output5").innerHTML = ("Miles: " + miles + "<br/>Yards: " + yards + "<br/>Feet: " + feet + "<br/>Inches: " + inchCount);
 
   ////////////////////// DO NOT MODIFY
   let inches = input; // DO NOT MODIFY
@@ -112,6 +115,11 @@ function centimeters() {
 
   // You are free to modify the value of centimeters, which you'll
   // likely need to do. Please do not modify the value of input.
+  
+  let kilometers = Math.floor(centimeters/100000);
+  let meters = Math.floor((centimeters - (kilometers * 100000))/100);
+  let centiCount = Math.floor((centimeters - (kilometers * 100000) - (meters * 100);
+  document.getElementById("output6").innerHTML = ("Kilometers: " + kilometers + "<br/>Meters: " + meters + "<br/>Centimeters: " + centiCount);
 
   /////////////////////////// DO NOT MODIFY
   let centimeters = input; // DO NOT MODIFY
@@ -134,8 +142,11 @@ function fluidOunces() {
   let input = prompt("Enter a non-negative integer."); // DO NOT MODIFY
   /////////////////////////////////////////////////////// DO NOT MODIFY
 
-  // You are free to modify the value of fluidOunces, which you'll
-  // likely need to do. Please do not modify the value of input.
+  let gallons = Math.floor(fluidOunces/128);
+  let quarts = 
+  let pints = 
+  let cups = 
+  let flozCount = fluidOunces
 
   /////////////////////////// DO NOT MODIFY
   let fluidOunces = input; // DO NOT MODIFY
