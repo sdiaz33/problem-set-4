@@ -143,11 +143,12 @@ function fluidOunces() {
   /////////////////////////////////////////////////////// DO NOT MODIFY
 
   let gallons = Math.floor(fluidOunces/128);
-  let quarts = 
-  let pints = 
-  let cups = 
-  let flozCount = fluidOunces
-
+  let quarts = Math.floor((fluidOunces - (gallons * 128))/32);
+  let pints = Math.floor((fluidOunces - (gallons * 128) - (quarts * 32))/16);
+  let cups = Math.floor((fluidOunces - (gallons * 128) - (quarts * 32) - (pints * 16))/8);
+  let flozCount = fluidOunces - ((fluidOunces - (gallons * 128) - (quarts * 32) - (pints * 16) - (cups * 8);
+  document.getElementById("output7").innerHTML = ("Gallons: " + gallons + "<br/>Quarts: " + quarts + "<br/>Pints: " + pints + "<br/>Cups: " + cups);
+                                  
   /////////////////////////// DO NOT MODIFY
   let fluidOunces = input; // DO NOT MODIFY
   /////////////////////////// DO NOT MODIFY
@@ -168,9 +169,11 @@ function ounces() {
   /////////////////////////////////////////////////////// DO NOT MODIFY
   let input = prompt("Enter a non-negative integer."); // DO NOT MODIFY
   /////////////////////////////////////////////////////// DO NOT MODIFY
-
-  // You are free to modify the value of ounces, which you'll likely
-  // need to do. Please do not modify the value of input.
+  
+  let tons = Math.floor(ounces/32000);
+  let pounds = Math.floor((ounces - (tons * 32000))/16);
+  let ozCount = ounces - (tons * 32000) - (pounds * 16);
+  document.getElementById("output8").innerHTML = ("Tons: " + tons + "<br/>Pounds: " + pounds + "<br/>Ounces: " + ozCount);
 
   ////////////////////// DO NOT MODIFY
   let ounces = input; // DO NOT MODIFY
@@ -193,8 +196,12 @@ function money() {
   let input = prompt("Enter a non-negative integer."); // DO NOT MODIFY
   /////////////////////////////////////////////////////// DO NOT MODIFY
 
-  // You are free to modify the value of pennies, which you'll likely
-  // need to do. Please do not modify the value of input.
+  let dollars = Math.floor(pennies/100);
+  let quarters = Math.floor((pennies - (dollars * 100))/25);
+  let dimes = Math.floor((pennies - (dollars * 100) - (quarters * 25))/10);
+  let nickels = Math.floor((pennies - (dollars * 100) - (quarters * 25) - (dimes * 10))/5);
+  let pennyCount = pennies - ((pennies - (dollars * 100) - (quarters * 25) - (dimes * 10) - (nickels * 5);
+  document.getElementById("output9").innerHTML = ("Dollars: " + Dollars + "<br/>Quarters: " + quarters + "Dimes: " + dimes + "Nickels: " + nickels + "Pennies: " + pennyCount);
 
   /////////////////////// DO NOT MODIFY
   let pennies = input; // DO NOT MODIFY
@@ -217,8 +224,13 @@ function change() {
   let input = prompt("Enter a non-negative number less than 1.00."); // DO NOT MODIFY
   ///////////////////////////////////////////////////////////////////// DO NOT MODIFY
 
-  // You are free to modify the value of amount, which you'll likely
-  // need to do. Please do not modify the value of input.
+  let amount = (amount * 100);
+  let quarters = Math.floor(amount/25);
+  let dimes = Math.floor((amount - (quarters * 25))/10);
+  let nickels = Math.floor((amount - (quarters * 25) - (dimes * 10))/5);
+  let pennies = amount - (quarters * 25) - (dimes * 10) - (nickels * 5);
+  let Change = document.getElementById("output10")
+  Change.innerHTML = ("Quarters: " + quarters + "Dimes: " + dimes + "Nickels: " + nickels + "Pennies: " + pennies);
 
   ////////////////////// DO NOT MODIFY
   let amount = input; // DO NOT MODIFY
