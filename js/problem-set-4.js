@@ -22,8 +22,9 @@ function helloAgain() {
   let name; // DO NOT MODIFY      the value that the user enters
   //////////// DO NOT MODIFY      in response to your prompt.
 
-  name = prompt("Please enter your name");
-    document.getElementById("output2").innerHTML = ("Hello, " + name + "!");
+   let name = prompt("Please enter your name");
+   var sayingHello = document.getElementById("output2")
+   sayingHello.innerHTML = ("Hello, " + name + "!");
     }
 
   ///////////////////////////// DO NOT MODIFY
@@ -45,7 +46,8 @@ function celsius() {
   // (inclusive), and rounds this value to 2 decimal places.
 
   let fahr = ((cels * 1.8) + 32).toFixed(2);
-  document.getElementById("output3").innerHTML = (cels + " degrees Celsius equals " + fahr + "degrees Fahrenheit.");
+  let fah = document.getElementById("output3")
+  fah.innerHTML = (cels + " degrees Celsius equals " + fahr + "degrees Fahrenheit.");
 
   ////////////////////////// DO NOT MODIFY
   check("celsius", cels); // DO NOT MODIFY
@@ -65,8 +67,9 @@ function fahrenheit() {
   // The above code generates a random number between -100 and 1000
   // (inclusive), and rounds this value to 2 decimal places.
 
-  let cels = ((Math.fahr() - 32) * 1.8).toFixed(2);
-  document.getElementById("output4").innerHTML = (fahr + " degrees Fahrenheit equals " + cels + "degrees Celsius.");
+  let cels = ((fahr - 32) * 1.8).toFixed(2);
+  let celsi = document.getElementById("output4")
+  celsi.innerHTML = (fahr + " degrees Fahrenheit equals " + cels + "degrees Celsius.");
 
   ///////////////////////////// DO NOT MODIFY
   check("fahrenheit", fahr); // DO NOT MODIFY
@@ -90,7 +93,8 @@ function inches() {
   let yards = Math.floor((inches - (miles * 63360))/36);
   let feet = Math.floor((inches - (miles * 63360) - (yards * 36)/12);
   let inchCount = inches - (miles * 63360) - (yards * 36) - (feet * 12);
-  document.getElementById("output5").innerHTML = ("Miles: " + miles + "<br/>Yards: " + yards + "<br/>Feet: " + feet + "<br/>Inches: " + inchCount);
+  let div5 = document.getElementById("output5")
+  div5.innerHTML = ("Miles: " + miles + "<br/>Yards: " + yards + "<br/>Feet: " + feet + "<br/>Inches: " + inchCount);
 
   ////////////////////// DO NOT MODIFY
   let inches = input; // DO NOT MODIFY
@@ -119,7 +123,8 @@ function centimeters() {
   let kilometers = Math.floor(centimeters/100000);
   let meters = Math.floor((centimeters - (kilometers * 100000))/100);
   let centiCount = Math.floor((centimeters - (kilometers * 100000) - (meters * 100);
-  document.getElementById("output6").innerHTML = ("Kilometers: " + kilometers + "<br/>Meters: " + meters + "<br/>Centimeters: " + centiCount);
+  let div6 = document.getElementById("output6")
+  div6.innerHTML = ("Kilometers: " + kilometers + "<br/>Meters: " + meters + "<br/>Centimeters: " + centiCount);
 
   /////////////////////////// DO NOT MODIFY
   let centimeters = input; // DO NOT MODIFY
@@ -147,7 +152,8 @@ function fluidOunces() {
   let pints = Math.floor((fluidOunces - (gallons * 128) - (quarts * 32))/16);
   let cups = Math.floor((fluidOunces - (gallons * 128) - (quarts * 32) - (pints * 16))/8);
   let flozCount = fluidOunces - ((fluidOunces - (gallons * 128) - (quarts * 32) - (pints * 16) - (cups * 8);
-  document.getElementById("output7").innerHTML = ("Gallons: " + gallons + "<br/>Quarts: " + quarts + "<br/>Pints: " + pints + "<br/>Cups: " + cups);
+  let floz = document.getElementById("output7")
+  floz.innerHTML = ("Gallons: " + gallons + "<br/>Quarts: " + quarts + "<br/>Pints: " + pints + "<br/>Cups: " + cups);
                                   
   /////////////////////////// DO NOT MODIFY
   let fluidOunces = input; // DO NOT MODIFY
@@ -173,7 +179,8 @@ function ounces() {
   let tons = Math.floor(ounces/32000);
   let pounds = Math.floor((ounces - (tons * 32000))/16);
   let ozCount = ounces - (tons * 32000) - (pounds * 16);
-  document.getElementById("output8").innerHTML = ("Tons: " + tons + "<br/>Pounds: " + pounds + "<br/>Ounces: " + ozCount);
+  let oz = document.getElementById("output8")
+  oz.innerHTML = ("Tons: " + tons + "<br/>Pounds: " + pounds + "<br/>Ounces: " + ozCount);
 
   ////////////////////// DO NOT MODIFY
   let ounces = input; // DO NOT MODIFY
@@ -201,7 +208,8 @@ function money() {
   let dimes = Math.floor((pennies - (dollars * 100) - (quarters * 25))/10);
   let nickels = Math.floor((pennies - (dollars * 100) - (quarters * 25) - (dimes * 10))/5);
   let pennyCount = pennies - ((pennies - (dollars * 100) - (quarters * 25) - (dimes * 10) - (nickels * 5);
-  document.getElementById("output9").innerHTML = ("Dollars: " + Dollars + "<br/>Quarters: " + quarters + "Dimes: " + dimes + "Nickels: " + nickels + "Pennies: " + pennyCount);
+  let money = document.getElementById("output9")
+  money.innerHTML = ("Dollars: " + Dollars + "<br/>Quarters: " + quarters + "Dimes: " + dimes + "Nickels: " + nickels + "Pennies: " + pennyCount);
 
   /////////////////////// DO NOT MODIFY
   let pennies = input; // DO NOT MODIFY
