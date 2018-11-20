@@ -5,7 +5,7 @@
 function hello() {
 
   var div = document.getElementById("output1");
-  div.innerHTML = "Hello, AP Computer Science Principles!";
+    div.innerHTML = "Hello, AP Computer Science Principles!";
 
 
   ////////////////// DO NOT MODIFY
