@@ -4,8 +4,8 @@
 
 function hello() {
 
-  var div1 = document.getElementById("output1");
-  div1.innerHTML = "Hello, AP Computer Science Principles!";
+  var div = document.getElementById("output1");
+  div.innerHTML = "Hello, AP Computer Science Principles!";
 
 
   ////////////////// DO NOT MODIFY
