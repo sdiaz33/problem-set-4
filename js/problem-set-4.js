@@ -2,15 +2,15 @@
  * Hello. 2 points.
  */
 
-function hello() {
+// function hello() {
 
-  var div = document.getElementById("output1");
-    div.innerHTML = "Hello, AP Computer Science Principles!";
+//   var div = document.getElementById("output1");
+//     div.innerHTML = "Hello, AP Computer Science Principles!";
   
-  ////////////////// DO NOT MODIFY
-  check("hello"); // DO NOT MODIFY
-  ////////////////// DO NOT MODIFY
-}
+//   ////////////////// DO NOT MODIFY
+//   check("hello"); // DO NOT MODIFY
+//   ////////////////// DO NOT MODIFY
+// }
   
 /*
  * Hello, Again. 3 points.
